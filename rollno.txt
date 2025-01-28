@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Roll Number</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        input[type="text"] {
+            width: 200px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Enter Your Roll Number</h1>
+        <input type="text" id="rollNumber" placeholder="Roll Number">
+        <button onclick="checkRollNumber()">Submit</button>
+    </div>
+    <script>
+        function checkRollNumber() {
+            // Add your logic here to validate and process the entered roll number
+            // For example, you could send the roll number to a server using AJAX
+            var rollNo = document.getElementById("rollNumber").value;
+            alert("Roll Number: " + rollNo); // Replace with your actual validation/processing
+        }
+    </script>
+</body>
+</html>
